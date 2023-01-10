@@ -5,8 +5,8 @@ import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
   return (
-    <div className="App  dark:bg-gray-800 ">
-      <div className="max-w-screen-xl  mx-auto">
+    <div className="App bg-[#2a2a2a]">
+      <div className="max-w-screen-lg  mx-auto">
         {" "}
         <ChakraProvider>
           <RouterProvider router={router}></RouterProvider>

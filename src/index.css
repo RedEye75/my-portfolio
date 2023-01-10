@@ -15,3 +15,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+#name {
+  font-family: "Passions Conflict", cursive;
+}
+#text {
+  font-family: "Noto Serif", serif;
+}
+nav a.active {
+  color: darkgreen;
+  text-decoration: overline;
+}

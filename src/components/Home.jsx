@@ -1,46 +1,51 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { BsGithub } from "react-icons/bs";
-import { SiLinkedin } from "react-icons/si";
-import { FaGithubSquare } from "react-icons/fa";
+import About from "./About";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
     <div>
-      <section className=" dark:text-gray-100">
-        <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-          <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-            <img
-              src="https://media.tenor.com/2uyENRmiUt0AAAAC/coding.gif"
-              alt=""
-              className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
-            />
-          </div>
-          <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-            <h1 className="text-5xl font-bold leading-none sm:text-6xl">
-              HI..! I'm Yusuf Bin
-              <span className="dark:text-violet-400"> Imam</span>
+      <section className="bg-[#2a2a2a] text-white">
+        <div className="mx-auto max-w-screen-xl px-4  lg:flex lg:h-screen lg:items-center">
+          <div className="mx-auto max-w-3xl text-center">
+            <h1 className="text-2xl font-medium" id="name">
+              Hello..! I am
             </h1>
-            <p className="mt-6 mb-8 text-4xl font-bold sm:mb-12">
-              Front-end Developer
+            <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl ">
+              Yusuf Bin Imam
+              <span className="sm:block "> Mern stack developer</span>
+            </h1>
+
+            <p
+              id="text"
+              className="mx-auto mt-4 max-w-xl sm:text-xl sm:leading-relaxed"
+            >
+              I love to create beautiful and performant products with delightful
+              user experiences.!
             </p>
-            <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-              <Link className="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900">
-                Resume
-              </Link>
-              <Link className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">
+
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
+              <a href="https://drive.google.com/file/d/1WAdTsZ8UrHGxjqIU8E2-VuezzIBcx4aH/view?usp=share_link">
+                {" "}
+                <button className="rounded py-3 px-12 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white  font-semibold">
+                  Resume
+                </button>
+              </a>
+
+              <Link
+                to={"/contact"}
+                className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+              >
                 Hire Me
               </Link>
-            </div>
-            <div className="flex mt-5">
-              <SiLinkedin className="text-4xl mt-3 hover:bg-blue-800" />
-              <FaGithubSquare className="text-4xl mt-3 ml-3 hover:bg-blue-800" />
             </div>
           </div>
         </div>
       </section>
+      <About />
+      <Contact />
     </div>
   );
 };
-
 export default Home;
