@@ -2,16 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="bg-[#6E07F3] py-28">
+    <div className="bg-[#6E07F3] py-28 ">
       <div className="mt-10 max-w-screen-lg mx-auto ">
-        {/* <p
-          data-aos="flip-left"
-          data-aos-duration="3000"
-          className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-blue-500 uppercase rounded-full bg-teal-accent-400"
-        >
-          About
-        </p> */}
-
         <div className=" mt-10 grid grid-cols-2">
           <div
             data-aos="fade-right"

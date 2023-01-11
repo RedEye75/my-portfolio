@@ -8,9 +8,7 @@ function App() {
     <div className="App">
       <div className=" mx-auto">
         {" "}
-        <ChakraProvider>
-          <RouterProvider router={router}></RouterProvider>
-        </ChakraProvider>
+        <RouterProvider router={router}></RouterProvider>
       </div>
     </div>
   );
