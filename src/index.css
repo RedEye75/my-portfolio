@@ -25,3 +25,11 @@ nav a.active {
   color: darkgreen;
   text-decoration: overline;
 }
+#title {
+  /* font-family: "Alegreya", serif; */
+  font-family: "Noto Serif", serif;
+  /* font-family: "Sofia Sans", sans-serif; */
+}
+#navlinks {
+  font-family: "Sofia Sans", sans-serif;
+}

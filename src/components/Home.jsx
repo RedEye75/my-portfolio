@@ -2,12 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
+import Image from "./Image";
 
 const Home = () => {
   return (
     <div>
-      <section className="bg-[#2a2a2a] text-white">
-        <div className="mx-auto max-w-screen-xl px-4  lg:flex lg:h-screen lg:items-center">
+      <section className=" bg-[#ffffff] text-white">
+        <div className="mx-auto  px-4  lg:flex lg:h-screen lg:items-center">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-2xl font-medium" id="name">
               Hello..! I am
@@ -19,10 +20,11 @@ const Home = () => {
 
             <p
               id="text"
-              className="mx-auto mt-4 max-w-xl sm:text-xl sm:leading-relaxed"
+              className="mx-auto mt-4 font-bold max-w-xl text-gray-800
+              sm:text-xl sm:leading-relaxed"
             >
-              I love to create beautiful and performant products with delightful
-              user experiences.!
+              I like to code things from scratch, and enjoy bringing ideas to
+              life in the browser.
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -43,6 +45,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Image />
       <About />
       <Contact />
     </div>

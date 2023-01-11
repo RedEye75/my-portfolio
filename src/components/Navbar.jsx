@@ -64,27 +64,42 @@ export default function Example() {
   }, []);
 
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <NavLink to={"/"} className="mr-5 font-bold  hover:text-green-800">
+    <ul
+      id="navlinks"
+      className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6"
+    >
+      <NavLink
+        to={"/"}
+        className="mr-5 font-bold text-black hover:text-green-800"
+      >
         Home
       </NavLink>
 
-      <NavLink to={"/about"} className="mr-5 font-bold hover:text-green-800">
+      <NavLink
+        to={"/about"}
+        className="mr-5 text-black font-bold hover:text-green-800"
+      >
         About
       </NavLink>
 
-      <NavLink to={"/project"} className="mr-5 font-bold hover:text-green-800">
+      <NavLink
+        to={"/project"}
+        className="mr-5 text-black font-bold hover:text-green-800"
+      >
         Projects
       </NavLink>
 
-      <NavLink to={"blogs"} className="mr-5 font-bold hover:text-green-800 ">
+      <NavLink
+        to={"blogs"}
+        className="mr-5 font-bold text-black hover:text-green-800 "
+      >
         Blogs
       </NavLink>
     </ul>
   );
 
   return (
-    <Navbar className="mx-auto max-w-screen-xl h-24 border-none   bg-[#2a2a2a] py-2 px-4 lg:px-8 lg:py-4">
+    <Navbar className="mx-auto max-w-screen-xl h-24 border-none  py-2 px-4 lg:px-8 lg:py-4">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
@@ -93,7 +108,10 @@ export default function Example() {
           className="mr-4 cursor-pointer py-1.5 font-normal"
         >
           <Link to={"/"}>
-            <span id="name" className="font-serif text-5xl   font-bold">
+            <span
+              id="name"
+              className="font-serif text-5xl text-[#6E07F3]  font-extrabold"
+            >
               Yusuf
             </span>
           </Link>
