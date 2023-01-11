@@ -31,7 +31,8 @@ const Contact = () => {
         <div>
           <img
             className="w-72 mx-auto ml-10 mb-32"
-            src="https://cdn3d.iconscout.com/3d/premium/thumb/contact-us-5467852-4568171.png"
+            // src="https://cdn3d.iconscout.com/3d/premium/thumb/contact-us-5467852-4568171.png"
+            src="https://cdn-icons-mp4.flaticon.com/512/8722/8722677.mp4"
             alt=""
           />
         </div>

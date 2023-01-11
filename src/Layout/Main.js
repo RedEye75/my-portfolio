@@ -10,9 +10,11 @@ const Main = () => {
       <Navbar />
 
       <div>
-        <Outlet />
+        <div className="mt-40 lg:mt-10">
+          <Outlet />
+        </div>
 
-        <div class=" fixed  bottom-48 left-20 rounded w-14 h-48 bg-[#2c3c3c] text-white flex items-center justify-center">
+        <div class=" fixed hidden lg:flex bottom-48 left-20 rounded w-14 h-48 bg-[#2c3c3c] text-white  items-center justify-center">
           <div className="">
             {" "}
             <Sidebar />

@@ -18,7 +18,7 @@ const About = () => {
             alt=""
           />
         </div>
-        <div data-aos="fade-up" data-aos-duration="3000" className="mt-5">
+        <div data-aos="fade-up" data-aos-duration="3000" className="mt-16">
           <p className="text-gray-500 text-start font-mono text-xl">
             Hi there..! I’m Yusuf Bin Imam. I’m a junior Front-end developer.
             last 1 year I am working in this field. During this time for

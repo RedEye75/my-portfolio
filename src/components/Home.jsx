@@ -28,14 +28,14 @@ const Home = () => {
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a href="https://drive.google.com/file/d/1WAdTsZ8UrHGxjqIU8E2-VuezzIBcx4aH/view?usp=share_link">
                 {" "}
-                <button className="rounded py-3 px-12 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white  font-semibold">
+                <button className="rounded py-3 px-12 bg-gradient-to-r from-green-500 to-blue-600 hover:from-pink-500 hover:to-yellow-500 text-white  font-semibold">
                   Resume
                 </button>
               </a>
 
               <Link
                 to={"/contact"}
-                className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+                className="rounded py-3 px-12 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-red-800 hover:to-black text-white  font-semibold"
               >
                 Hire Me
               </Link>

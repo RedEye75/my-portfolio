@@ -99,10 +99,15 @@ export default function Example() {
           </Link>
         </Typography>
         <div className="hidden lg:block">{navList}</div>
-        <Button variant="gradient" size="sm" className="hidden lg:inline-block">
-          <Link to={"/contact"}>
+        <Button
+          className="rounded-full hidden lg:inline-block py-3 px-12 bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-pink-500 text-white  font-semibold"
+          variant="gradient"
+          size="sm"
+        >
+          {/* <Link to={"/contact"}>
             <span>Contact</span>
-          </Link>
+          </Link> */}
+          <a href="#contact">contact</a>
         </Button>
         <IconButton
           variant="text"
@@ -143,10 +148,12 @@ export default function Example() {
         </IconButton>
       </div>
       <MobileNav open={openNav}>
-        {navList}
-        <Button variant="gradient" size="sm" fullWidth className="mb-2">
-          <span>Buy Now</span>
-        </Button>
+        <div>
+          {navList}
+          <Button variant="gradient" size="sm" fullWidth className="mb-2">
+            <span>Buy Now</span>
+          </Button>
+        </div>
       </MobileNav>
     </Navbar>
   );
